@@ -10,6 +10,7 @@ body {
     background-color: #000;
     color: #eee;
     /* transition: background-color .2s ease-in-out, color .2s ease-in-out; */
+    user-select: none;
 }
 
 .container {
@@ -25,7 +26,7 @@ body {
     font-size: 54px;
     font-weight: 800;
     text-align: center;
-    color: #565656;
+    color: #ffffff;
 }
 
 #Start {
@@ -45,8 +46,9 @@ body {
     border-radius: 8px;
     border:none;
     background: transparent;
-    color: #202020;
+    color: #11111127;
     cursor: pointer;
+    user-select: none;
 }
 
 #Start button:hover {
@@ -61,6 +63,10 @@ body {
 }
 
 .img {
-    opacity: 10%;
-    
+    opacity: 90%;
+    /* center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

@@ -4,10 +4,10 @@ let modeBtn = document.getElementById("MODE");
 let homeBtn = document.getElementById("HOME");
 let title = document.getElementById("title");
 let startBtn = document.getElementById("Start");
-let playSound = () => {
-    let audio = new Audio("sound.mp3");
-    audio.play();
-}
+// let playSound = () => {
+//     let audio = new Audio("sound.mp3");
+//     audio.play();
+// }
 
 function Random() {
     const Tw = window.innerWidth
@@ -25,7 +25,7 @@ startBtn.style.left = `${rX}px`;
     Random();
 // const darkLimit = 5;
 // let darkCount = 0;
-title.textContent = "Cari dan Click kata 'Cihuy'"
+title.textContent = "Cari dan Click kata 'Mulai'"
 
 function Start() {
     title.textContent = "3"
@@ -45,11 +45,20 @@ function Start() {
     setTimeout(() => {
         title.textContent = "FLASHBANK"
         startBtn.style.display = "none";
-    }, 5400);
-    setTimeout(() => {
         title.style.color = "Black";
         body.style.backgroundColor = "White";
-    }, 5600);
+    }, 5400);
+    setTimeout(() => {
+        title.textContent = "Just Kidding"
+        title.style.color = "white";
+        body.style.backgroundColor = "black";
+    }, 5900);
+    setTimeout(() => {
+        title.textContent = "Wait. Look this flower"
+    }, 6400);
+    setTimeout(() => {
+        window.location.href = "code-flower/";
+    }, 8400);
 
 }
 // modeBtn.textContent = "DARK MODE";
